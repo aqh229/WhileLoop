@@ -1,0 +1,22 @@
+package week5pm;
+
+import javax.swing.JOptionPane;
+
+public class WhileLoops {
+
+	public static void main(String[] args) {
+		// while loop - pre test
+		// error validation o months 1-12
+		
+		int month = 1;
+				
+		month = Integer.parseInt(JOptionPane.showInputDialog("Enter your birthday"));
+		
+		while (month > 12 || month < 1) 
+		{
+				month = Integer.parseInt(JOptionPane.showInputDialog("Erorrr - Must Enter 1-12"));
+		}
+		System.out.println("You were born in + " + month);
+	}
+
+}
